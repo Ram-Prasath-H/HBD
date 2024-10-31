@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday</title>
+    <title>Birthday Card</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="balloons">
-            <div class="balloon balloon1"></div>
-            <div class="balloon balloon2"></div>
-            <div class="balloon balloon3"></div>
-        </div>
-        
-        <div class="card">
-            <h1>Happy Birthday!</h1>
-            <p>Wishing you a fantastic day filled with happiness and joy. 🎉 May all your dreams and wishes come true!</p>
-            <button onclick="showMessage()">Click here for a surprise</button>
-            <p class="message" id="surpriseMessage" style="display: none;">
-                🎂 🎈 Here's to an amazing year ahead! 🎈 🎂
-            </p>
+        <div class="birthdayCard">
+            <div class="cardFront">
+                <div class="front-text">
+                    <h3 class="happy">HAPPY</h3>
+                    <h2 class="bday">BIRTHDAY</h2>
+                    <h3 class="toyou">to you!</h3>
+                </div>
+                <div class="wrap-deco">
+                    <div class="decorations"></div>
+                    <div class="decorationsTwo"></div>
+                </div>
+                <div class="wrap-decoTwo">
+                    <div class="decorations"></div>
+                    <div class="decorationsThree"></div>
+                </div>
+                <div class="plate">
+                    <div class="cake"></div>
+                    <div class="flame"></div>
+                </div>
+            </div>
+            <div class="cardInside">
+                <div class="inside-text">
+                    <h3 class="happy">HAPPY</h3>
+                    <h2 class="bday">BIRTHDAY</h2>
+                    <h3 class="toyou">to you!</h3>
+                </div>
+                <div class="wishes">
+                    <p>Dear Harshini,</p>
+                    <p>Happy birthday!! I hope your day is filled with lots of love and laughter! May all of your birthday wishes come true.</p>
+                    <p class="name">~ Your friend</p>
+                </div>
+            </div>
         </div>
     </div>
-
-    <script>
-        function showMessage() {
-            const message = document.getElementById("surpriseMessage");
-            message.style.display = "block";
-        }
-    </script>
 </body>
+
 </html>
